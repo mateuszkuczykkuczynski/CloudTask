@@ -47,6 +47,6 @@ with open('/tmp/instance_data.json', 'w') as f:
 
 # Upload the file to an S3 bucket
 s3 = boto3.client('s3')
-bucket_name = 's3://applicant-task/r4p17/'
+bucket_name = 'applicant-task'
 key = 'instance_data.json'
 s3.upload_file('/tmp/instance_data.json', bucket_name, key)
